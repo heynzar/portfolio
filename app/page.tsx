@@ -9,16 +9,19 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col gap-10 px-6 sm:px-2 justify-center items-center max-w-xl mx-auto h-dvh w-full">
-      <Image
-        src="/logo.svg"
-        width={500}
-        height={200}
-        alt="nzar dev logo"
-        className="h-8 w-auto"
-      />
+      <Link href="/">
+        <Image
+          src="/logo.svg"
+          width={500}
+          height={200}
+          alt="nzar dev logo"
+          className="h-8 w-auto"
+        />
+      </Link>
 
-      <h1 className="font-serif-i text-6xl sm:text-7xl tracking-tighter leading-[86%] text-center">
-        I build with love
+      <h1 className="font-serif-i text-6xl sm:text-7xl tracking-tighter capitalize leading-[84%] text-center">
+        <span className="sm:hidden">Love, Logic And TypeScript</span>
+        <span className="hidden sm:inline">I build with love</span>
       </h1>
 
       <GithubCalendar username="heynzar" />
@@ -32,8 +35,7 @@ export default function Home() {
           Morocco
         </a>
         . Who treats code as art. My work is driven by love, purpose, and a
-        responsibility to make the web a little better than I found it. Find me
-        anywhere as{" "}
+        responsibility to make the web a little better. Find me anywhere as{" "}
         <Link href="/links" className="text-[#0066ff] underline">
           @heynzar
         </Link>{" "}
