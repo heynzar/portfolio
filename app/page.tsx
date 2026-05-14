@@ -48,7 +48,7 @@ export default function Home() {
 
       <footer className="flex items-center gap-2">
         <Link
-          href="/Projects"
+          href="/projects"
           className={cn(
             buttonVariants({ variant: "secondary", size: "sm" }),
             "text-sm gap-1.5 font-medium",
