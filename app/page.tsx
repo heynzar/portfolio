@@ -1,23 +1,15 @@
 import { GithubCalendar } from "@/components/github-calendar";
+import Logo from "@/components/logo";
 import { buttonVariants } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/toggle";
 import { cn } from "@/lib/utils";
 import { Folder } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10 px-6 sm:px-2 justify-center items-center max-w-xl mx-auto h-dvh w-full">
-      <Link href="/">
-        <Image
-          src="/logo.svg"
-          width={500}
-          height={200}
-          alt="nzar dev logo"
-          className="h-8 w-auto"
-        />
-      </Link>
+    <div className="flex flex-col gap-10 px-6 sm:px-2 justify-center items-center max-w-xl mx-auto min-h-dvh py-10 overflow-y-auto w-full">
+      <Logo />
 
       <h1 className="font-serif-i text-6xl sm:text-7xl tracking-tighter capitalize leading-[84%] text-center">
         <span className="sm:hidden">Love, Logic And TypeScript</span>
@@ -31,6 +23,8 @@ export default function Home() {
         <a
           href="https://www.google.com/search?q=morocco"
           className="text-[#0066ff] underline"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Morocco
         </a>
